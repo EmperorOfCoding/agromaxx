@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+    color: #DBF2FF;
+    overflow: hidden;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 100vh;
+    width: 250px;
+    text-align: start;
+    background-color: #DBF2FF;
+    font-weight: 500;
+}
+
+
+.lista-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:  center;
+    margin-top: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+.lista-links a {
+    text-decoration: none;
+}
+
+.link-recomendacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-links{
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+}
+
+aside button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 9px;
+    background-color: #617999;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+aside button:hover{
+    background-color: #516585;
+    transform: scale(1.05);
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+ }
+
+
+main {
+    background-color: #124975;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+main ul li {
+    list-style:none ;
+}
+
+
+.introducao, .como-funciona, .beneficios, .como-adquirir {
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: disc;
+    font-weight: 300;
+}
+
+main li {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+
+}
+
+
+
+

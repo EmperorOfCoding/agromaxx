@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/token.css"/>
+    <script src="../js/token.js" defer></script>
+
+    <title>Página de Token</title>
+  </head>
+  <body>
+    <aside>
+      <a href="../../index.html">
+        <img
+        class="logo"
+        src="../imgs/logo.svg"
+        alt="logo da agromax"
+        />
+      </a>
+      <nav>
+        <ul class="lista-links">
+          <li>
+          <a href="../html/Dashboard.html">
+            <button class="link-home"> 
+              Introdução
+              <img
+                class="img-links"
+                src="../imgs/home.svg"
+              />
+            </button>
+          </a>
+          </li>
+          <li>
+            <button class="link-dados" >   
+              Dados
+              <img class="img-links" src="../imgs/data.svg" />
+            </button>
+          </li>
+          <li>
+            <a href="./recomendacoes.html">
+              <button class="link-recomendacoes">Recomendações</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+    <div class="conteudo">
+          <h1>Insira o token de identificação do aparelho:</h1>
+
+         <div class="input-container">
+          <input value="XAF-5768-WY" type="text" id="token-input" placeholder="Formato(ABC-1234-XY)" required/> <!--Formato: ABC-1234-XY-->
+          <button  class="token-button">Inserir</button>
+        </div>
+     </div>
+    </main>
+
+    <div id="loading-screen">
+      <figure>
+        <div class="dot white"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </figure>
+    </div>
+
+  </body>
+</html>

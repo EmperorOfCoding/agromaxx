@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+    color: #DBF2FF;
+    overflow: hidden;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 100vh;
+    width: 250px;
+    text-align: start;
+    background-color: #DBF2FF;
+    font-weight: 500;
+}
+
+
+.lista-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:  center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.lista-links a {
+    text-decoration: none;
+}
+
+.link-recomendacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-links{
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+}
+
+
+aside button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 9px;
+    background-color: #617999;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+aside button:hover{
+    background-color: #516585;
+    transform: scale(1.05);
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+ }
+
+main {
+    background-color: #124975;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main .main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .card-container {
+    background: linear-gradient(135deg, #124975, #124975);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.icon-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.alert-container {
+    text-align: center;
+}
+
+.alert-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #DBF2FF;
+}
+
+.alert-container p {
+    font-size: 19px;
+    color: #DBF2FF;
+}
+
+.graph-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+main .card-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+main .card-container img {
+    width: 100px;
+    height: 100px;
+}
+
+
+main .topic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+main .topic-container img {
+    width: 120px;
+    height: 120px;
+}
+
+main .topic-container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.titleTopicRecomendations {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffffff;
+}
+
+main .topic-container p {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+main .recomendations {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    gap: 15px;
+}
+
+main .recomendations ul {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main .recomendations li {
+    margin-bottom: 5px;
+    color: #DBF2FF;
+    font-size: 19px;
+}
+
+main li {
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  #617999;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+#prevBtn {
+    top: 20px;
+}
+
+#nextBtn {
+    bottom: 20px;
+}
+
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: transparent;
+    border: 2px solid #DBF2FF;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    .icon-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .alert-container h2 {
+        font-size: 24px;
+    }
+
+    .alert-container p, .titleTopicRecomendations, main .recomendations li {
+        font-size: 14px;
+    }
+
+    .graph-container {
+        width: 90%;
+    }
+
+    main .recomendations {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .topic-container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .topic-container h2 {
+        width: auto;
+    }
+
+    .recomendations {
+        width: auto;
+    }
+
+    main .card-container img {
+        width: 60px;
+        height: 60px;
+    }
+    main .card-container {
+        width: 90%;
+        height: 560px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

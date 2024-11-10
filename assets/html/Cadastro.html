@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <script src="../js/cadastro.js" defer></script>
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="cadastro-container">
+      <div class="box-cadastro">
+        <div class="titulos">
+          <h1>Crie uma conta</h1>
+          <p>já tem uma conta? <a class="link-style" href="../html/Login.html">Log in</a></p>
+        </div>
+          <div class="img-fechar">
+            <img
+              src="../imgs/close.svg"
+              alt=""
+              />
+            </div>
+
+        <form action="../html/TesteDeConhecimento.html">
+          <div id="input-nomes">
+            <input type="text" placeholder="Primeiro Nome" required/>
+            <input type="text" placeholder="Sobrenome" required>
+          </div>
+
+          <div id="input-dados">
+            <input type="email" placeholder="Email" required/>
+          </div>
+
+          <div id="input-senha"> 
+          <input type="password" id="senha" placeholder="Senha" required>
+          <div id="icon" onclick="showHide()"></div>
+            
+          </div>
+          
+          <div id="checkbox-input">
+            <input type="checkbox" required/>Eu concordo com os
+            <a class="link-style" href="">termos de serviços</a>
+          </div>
+
+          <div>
+            <button id="botao" type="submit">Crie uma conta</button>
+        </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <video autoplay muted loop id="background-video">
+          <source src="../videos/backgroundvideo.mp4" type="video/mp4">
+    </div> 
+  </body>
+</html>

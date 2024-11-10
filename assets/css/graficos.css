@@ -1,0 +1,321 @@
+
+/*
+Configuracoes Reset da Página
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #124975;
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 100vh;
+    width: 250px;
+    text-align: start;
+    background-color: #DBF2FF;
+    font-weight: 500;
+
+}
+
+
+.lista-links {
+    list-style: none;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    align-items:  center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.lista-links a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.link-recomendacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.img-links {
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+    
+}
+
+aside button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 9px;
+    background-color: #617999;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+aside button:hover {
+    background-color: #516585;
+    transform: scale(1.05);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+main .graphsContainer {
+    overflow: hidden;
+    margin-top: 120px;
+    width: 60%;
+    height: 500px;
+    position: relative;
+}
+
+main .graphsCard {
+    padding: 40px 20px;
+    transition: 1s;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    border-radius: 20px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main .introductionGraphsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid black ;
+    background-color: #DBF2FF;
+    padding: 0px 20px;
+    color: black;
+}
+
+main .titleAndGraphContainer {
+    padding: 20px;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+main .syncGraphContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main svg {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+main .number {
+    position: relative;
+    bottom: 56px;
+    left: 0px;
+}
+
+main .number p {
+    
+    color: black;
+}
+
+main svg circle {
+    display: flex;
+    fill: none;
+    stroke: #124975;
+    stroke-width: 9;
+    stroke-linecap: round;
+}
+
+main svg #circle1 {
+    fill: none;
+  stroke: #124975;
+  stroke-width: 9;
+  stroke-dasharray: 282.74;         /* Comprimento total da circunferência */
+  stroke-dashoffset: 282.74;        /* Começa escondido (0%) */
+  transform: rotate(-90deg);        /* Rota o círculo para começar no topo */
+  transform-origin: 50% 50%;        /* Garante que o ponto de rotação é o centro */
+  animation: loadProgress 2s cubic-bezier(0.5, 0, 0.2, 1) forwards;
+}
+
+main svg #circle2 {
+    stroke-dasharray: 251.33;
+    stroke-dashoffset: 62.83;
+}
+
+main svg #circle3 {
+    stroke-dasharray: 251.33;
+    stroke-dashoffset: 188.50;
+}
+
+main svg #circle4 {
+    stroke-dasharray: 251.33;
+    stroke-dashoffset: 150.80;
+}
+
+main .general-info {
+    display: flex;
+    flex-direction: column;
+    color: #DBF2FF;
+}
+
+main .general-info ul {
+    
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    gap: 18px;
+    list-style: none;
+}
+
+main .general-info ul li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .general-info ul li p {
+    width: 290px;
+}
+
+main .general-info ul li img {
+    width: 30px;
+    height: auto;
+}
+
+
+
+main .buttonContainer {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+main button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #617999;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: 2px transparent;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.syncButton {
+    background-color: #617999;
+}
+
+.syncButton:hover {
+    background-color: #124975;
+    color: white;
+}
+
+main .arrowButton:hover {
+    background-color: transparent;
+    border: 2px solid #617999;
+}
+
+main button img {
+    
+    width: 20px;
+    height: auto;
+}
+
+
+
+@keyframes loadProgress {
+    0% {
+      stroke-dashoffset: 282.74;      /* Começa sem preencher */
+    }
+    100% {
+      stroke-dashoffset: 141.37;      /* Vai até 50% */
+    }
+  }
+
+
+  @media (max-width:1456px) {
+    main .graphsContainer{
+        width: 80%;
+    }
+  }
+
+
+  @media (max-width: 1308px) {
+
+    main .graphsCard {
+        gap: 20px;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    main .graphsContainer{
+        width: 90%;
+    }
+    main .graphsCard {
+        gap: 0px;
+    }
+  }
